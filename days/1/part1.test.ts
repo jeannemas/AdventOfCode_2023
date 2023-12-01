@@ -12,6 +12,7 @@ treb7uchet
 
   // Act
   const result = day_1_part_1(input);
+
   // Assert
   assertEquals(result, expected);
 });

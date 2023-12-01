@@ -88,8 +88,8 @@ export function day_1_part_2(input: string) {
     const intAsStr = `${firstDigit}${lastDigit}`; // We concatenate the two digits into a string
     const int = +intAsStr; // We convert the string into a number
 
-    if (!(0 < int && int < 100))
-      throw new Error(`The number is not between 0 and 100: ${intAsStr}`); // We check that the number is between 0 and 100
+    // We check that the number is between 0 and 100
+    if (!(0 < int && int < 100)) throw new Error(`The number is not between 0 and 100: ${int}`);
 
     total += int; // We add the number to the total
   }

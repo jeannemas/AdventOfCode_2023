@@ -14,6 +14,7 @@ zoneight234
 
   // Act
   const result = day_1_part_2(input);
+
   // Assert
   assertEquals(result, expected);
 });
