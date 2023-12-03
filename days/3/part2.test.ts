@@ -1,7 +1,7 @@
-import { assertEquals } from '../../deps.ts';
-import { day_3_part_2 } from './part2.ts';
+import { assertEquals } from "../../deps.ts";
+import { day_3_part_2 } from "./part2.ts";
 
-Deno.test('Day 3 - Part 2', () => {
+Deno.test("Day 3 - Part 2", () => {
   // Arrange
   const input = `467..114..
 ...*......

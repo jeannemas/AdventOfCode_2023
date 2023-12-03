@@ -1,14 +1,10 @@
-/**
- * As you continue your walk, the Elf poses a second question:
- * in each game you played, what is the fewest number of cubes of each color that could have been in the bag to make the game possible?
- */
-import type { Game } from './types.d.ts';
-import { parseGameFromString } from './utils.ts';
+import type { Game } from "./types.d.ts";
+import { parseGameFromString } from "./utils.ts";
 
 export function day_2_part_2(input: string) {
   const INPUT_LINES = input
     .trim()
-    .split('\n')
+    .split("\n")
     .map((line) => line.trim()); // We split the input into lines and remove the trailing whitespaces
   const games: Game[] = []; // We will store the games in this array
 
@@ -31,7 +27,7 @@ export function day_2_part_2(input: string) {
 }
 
 if (import.meta.main) {
-  const INPUT_FILE = new URL('./input.txt', import.meta.url); // This is the path to the input file
+  const INPUT_FILE = new URL("./input.txt", import.meta.url); // This is the path to the input file
   const INPUT_FILE_CONTENT = await Deno.readTextFile(INPUT_FILE); // We first need to import the input file
 
   console.log(day_2_part_2(INPUT_FILE_CONTENT));
